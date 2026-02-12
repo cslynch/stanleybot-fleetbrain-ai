@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <filter id="eyeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="bodyGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#FF7A5C"/>
+      <stop offset="50%" stop-color="#E8604A"/>
+      <stop offset="100%" stop-color="#C44835"/>
+    </radialGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D0B14"/>
+      <stop offset="100%" stop-color="#151220"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <text x="600" y="220" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="72" font-weight="700" letter-spacing="-2">
+    <tspan fill="#F0F0F2">Stanley</tspan><tspan fill="#E8604A">Bot</tspan>
+  </text>
+  <text x="600" y="270" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="22" fill="#70707A">Managed AI Operations</text>
+  <ellipse cx="600" cy="780" rx="260" ry="270" fill="url(#bodyGrad)"/>
+  <circle cx="330" cy="600" r="24" fill="#2A2A35"/>
+  <path d="M318,582 C295,555 260,538 235,544 C220,548 222,568 235,577 C258,592 300,598 318,594 Z" fill="#E8604A"/>
+  <circle cx="870" cy="600" r="24" fill="#2A2A35"/>
+  <path d="M882,582 C905,555 940,538 965,544 C980,548 978,568 965,577 C942,592 900,598 882,594 Z" fill="#E8604A"/>
+  <ellipse cx="520" cy="580" rx="65" ry="68" fill="#0A0A12"/>
+  <ellipse cx="680" cy="580" rx="65" ry="68" fill="#0A0A12"/>
+  <circle cx="520" cy="586" r="33" fill="#00CCCC" filter="url(#eyeGlow)" opacity="0.6"/>
+  <circle cx="680" cy="586" r="33" fill="#00CCCC" filter="url(#eyeGlow)" opacity="0.6"/>
+  <circle cx="520" cy="586" r="26" fill="#00FFFF"/>
+  <circle cx="680" cy="586" r="26" fill="#00FFFF"/>
+  <circle cx="520" cy="586" r="16" fill="#66FFFF"/>
+  <circle cx="680" cy="586" r="16" fill="#66FFFF"/>
+  <circle cx="508" cy="572" r="9" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="668" cy="572" r="9" fill="#FFFFFF" opacity="0.8"/>
+</svg>
