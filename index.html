@@ -160,7 +160,7 @@ section { position: relative; z-index: 1; }
 .hero-content { max-width: 760px; }
 
 .hero-stan {
-  width: 100px; height: 100px; margin: 0 auto 24px;
+  width: 120px; height: 132px; margin: 0 auto 24px;
 }
 
 .hero-eyebrow {
@@ -427,21 +427,30 @@ section { position: relative; z-index: 1; }
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#" class="nav-logo" aria-label="StanleyBot home">
-      <svg viewBox="0 0 512 512" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 200 220" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-          <radialGradient id="bg" cx="50%" cy="35%" r="55%"><stop offset="0%" stop-color="#FF7A5C"/><stop offset="50%" stop-color="#E8604A"/><stop offset="100%" stop-color="#C44835"/></radialGradient>
+          <radialGradient id="nb" cx="50%" cy="40%" r="50%"><stop offset="0%" stop-color="#EF7B5B"/><stop offset="70%" stop-color="#E45A3B"/><stop offset="100%" stop-color="#C44428"/></radialGradient>
+          <radialGradient id="ne" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#7FFFFF"/><stop offset="50%" stop-color="#00E6D2"/><stop offset="100%" stop-color="#00B8A9"/></radialGradient>
+          <filter id="ng" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceGraphic" stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
         </defs>
-        <g fill="#B83D2E"><rect x="180" y="372" width="30" height="55" rx="15"/><rect x="222" y="377" width="30" height="57" rx="15"/><rect x="260" y="377" width="30" height="57" rx="15"/><rect x="302" y="372" width="30" height="55" rx="15"/></g>
-        <g><circle cx="115" cy="280" r="16" fill="#2A2A35"/><path d="M110,270 C100,250 80,230 60,225 C50,222 45,232 50,242 C58,258 85,272 110,275 Z" fill="#E8604A" stroke="#C44835" stroke-width="1"/><path d="M110,290 C100,310 80,325 60,332 C50,336 45,326 50,316 C58,300 85,288 110,285 Z" fill="#D45540" stroke="#B83D2E" stroke-width="1"/></g>
-        <g><circle cx="397" cy="280" r="16" fill="#2A2A35"/><path d="M402,270 C412,250 432,230 452,225 C462,222 467,232 462,242 C454,258 427,272 402,275 Z" fill="#E8604A" stroke="#C44835" stroke-width="1"/><path d="M402,290 C412,310 432,325 452,332 C462,336 467,326 462,316 C454,300 427,288 402,285 Z" fill="#D45540" stroke="#B83D2E" stroke-width="1"/></g>
-        <ellipse cx="256" cy="268" rx="142" ry="150" fill="url(#bg)"/>
-        <ellipse cx="206" cy="285" rx="42" ry="45" fill="#0A0A12"/><ellipse cx="306" cy="285" rx="42" ry="45" fill="#0A0A12"/>
-        <circle cx="206" cy="290" r="22" fill="#00CCCC" filter="url(#g)" opacity="0.6"/><circle cx="306" cy="290" r="22" fill="#00CCCC" filter="url(#g)" opacity="0.6"/>
-        <circle cx="206" cy="290" r="17" fill="#00FFFF"/><circle cx="306" cy="290" r="17" fill="#00FFFF"/>
-        <circle cx="206" cy="290" r="10" fill="#66FFFF"/><circle cx="306" cy="290" r="10" fill="#66FFFF"/>
-        <circle cx="198" cy="281" r="6" fill="#FFF" opacity="0.8"/><circle cx="298" cy="281" r="6" fill="#FFF" opacity="0.8"/>
-        <path d="M234,338 Q256,355 278,338" stroke="#A83828" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <path d="M60 155 Q45 175 38 190 Q33 198 42 195 Q50 192 53 180 Q55 170 58 158" fill="#D04A2E"/>
+        <path d="M78 158 Q72 178 68 192 Q65 200 74 196 Q80 192 79 180 Q78 170 79 160" fill="#D04A2E" opacity="0.9"/>
+        <path d="M100 160 Q100 180 99 195 Q98 204 103 204 Q108 203 107 193 Q106 178 102 160" fill="#D04A2E"/>
+        <path d="M122 158 Q128 178 132 192 Q135 200 126 196 Q120 192 121 180 Q122 170 121 160" fill="#D04A2E" opacity="0.9"/>
+        <path d="M140 155 Q155 175 162 190 Q167 198 158 195 Q150 192 147 180 Q145 170 142 158" fill="#D04A2E"/>
+        <ellipse cx="100" cy="100" rx="58" ry="64" fill="url(#nb)"/>
+        <line x1="100" y1="36" x2="100" y2="22" stroke="#C44428" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="100" cy="19" r="4.5" fill="#00E6D2" filter="url(#ng)"/>
+        <circle cx="100" cy="19" r="2.5" fill="#7FFFFF"/>
+        <ellipse cx="82" cy="98" rx="13" ry="14" fill="rgba(0,0,0,0.25)"/>
+        <ellipse cx="82" cy="98" rx="11" ry="12" fill="url(#ne)"/>
+        <ellipse cx="82" cy="98" rx="5" ry="6" fill="#005F56"/>
+        <ellipse cx="79" cy="94" rx="2.5" ry="3" fill="rgba(255,255,255,0.45)"/>
+        <ellipse cx="118" cy="98" rx="13" ry="14" fill="rgba(0,0,0,0.25)"/>
+        <ellipse cx="118" cy="98" rx="11" ry="12" fill="url(#ne)"/>
+        <ellipse cx="118" cy="98" rx="5" ry="6" fill="#005F56"/>
+        <ellipse cx="115" cy="94" rx="2.5" ry="3" fill="rgba(255,255,255,0.45)"/>
+        <path d="M90 122 Q100 130 110 122" fill="none" stroke="rgba(0,0,0,0.18)" stroke-width="1.5" stroke-linecap="round"/>
       </svg>
       <span class="nav-wm"><span class="s">Stanley</span><span class="b">Bot</span></span>
     </a>
@@ -462,21 +471,42 @@ section { position: relative; z-index: 1; }
 <section class="hero" id="hero">
   <div class="hero-content">
     <div class="hero-stan r">
-      <svg viewBox="0 0 512 512" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 400 440" width="120" height="132" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <filter id="g2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-          <radialGradient id="bg2" cx="50%" cy="35%" r="55%"><stop offset="0%" stop-color="#FF7A5C"/><stop offset="50%" stop-color="#E8604A"/><stop offset="100%" stop-color="#C44835"/></radialGradient>
+          <radialGradient id="hb" cx="50%" cy="40%" r="50%"><stop offset="0%" stop-color="#EF7B5B"/><stop offset="70%" stop-color="#E45A3B"/><stop offset="100%" stop-color="#C44428"/></radialGradient>
+          <radialGradient id="he" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#7FFFFF"/><stop offset="50%" stop-color="#00E6D2"/><stop offset="100%" stop-color="#00B8A9"/></radialGradient>
+          <filter id="hg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <radialGradient id="hs" cx="38%" cy="28%" r="40%"><stop offset="0%" stop-color="rgba(255,255,255,0.25)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></radialGradient>
+          <linearGradient id="ht" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E45A3B"/><stop offset="100%" stop-color="#C44428"/></linearGradient>
         </defs>
-        <g fill="#B83D2E"><rect x="180" y="372" width="30" height="55" rx="15"/><rect x="222" y="377" width="30" height="57" rx="15"/><rect x="260" y="377" width="30" height="57" rx="15"/><rect x="302" y="372" width="30" height="55" rx="15"/></g>
-        <g><circle cx="115" cy="280" r="16" fill="#2A2A35"/><path d="M110,270 C100,250 80,230 60,225 C50,222 45,232 50,242 C58,258 85,272 110,275 Z" fill="#E8604A" stroke="#C44835" stroke-width="1"/><path d="M110,290 C100,310 80,325 60,332 C50,336 45,326 50,316 C58,300 85,288 110,285 Z" fill="#D45540" stroke="#B83D2E" stroke-width="1"/></g>
-        <g><circle cx="397" cy="280" r="16" fill="#2A2A35"/><path d="M402,270 C412,250 432,230 452,225 C462,222 467,232 462,242 C454,258 427,272 402,275 Z" fill="#E8604A" stroke="#C44835" stroke-width="1"/><path d="M402,290 C412,310 432,325 452,332 C462,336 467,326 462,316 C454,300 427,288 402,285 Z" fill="#D45540" stroke="#B83D2E" stroke-width="1"/></g>
-        <ellipse cx="256" cy="268" rx="142" ry="150" fill="url(#bg2)"/>
-        <ellipse cx="206" cy="285" rx="42" ry="45" fill="#0A0A12"/><ellipse cx="306" cy="285" rx="42" ry="45" fill="#0A0A12"/>
-        <circle cx="206" cy="290" r="22" fill="#00CCCC" filter="url(#g2)" opacity="0.6"/><circle cx="306" cy="290" r="22" fill="#00CCCC" filter="url(#g2)" opacity="0.6"/>
-        <circle cx="206" cy="290" r="17" fill="#00FFFF"/><circle cx="306" cy="290" r="17" fill="#00FFFF"/>
-        <circle cx="206" cy="290" r="10" fill="#66FFFF"/><circle cx="306" cy="290" r="10" fill="#66FFFF"/>
-        <circle cx="198" cy="281" r="6" fill="#FFF" opacity="0.8"/><circle cx="298" cy="281" r="6" fill="#FFF" opacity="0.8"/>
-        <path d="M234,338 Q256,355 278,338" stroke="#A83828" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <path d="M145 310 Q120 350 105 380 Q95 400 110 395 Q125 390 135 360 Q140 340 150 320" fill="url(#ht)" opacity="0.95"/>
+        <path d="M170 315 Q160 360 148 395 Q142 415 158 408 Q172 400 175 370 Q178 345 178 320" fill="url(#ht)" opacity="0.9"/>
+        <path d="M200 320 Q200 370 198 405 Q196 425 204 425 Q212 425 210 405 Q208 370 205 320" fill="url(#ht)" opacity="0.95"/>
+        <path d="M230 315 Q240 360 252 395 Q258 415 242 408 Q228 400 225 370 Q222 345 222 320" fill="url(#ht)" opacity="0.9"/>
+        <path d="M255 310 Q280 350 295 380 Q305 400 290 395 Q275 390 265 360 Q260 340 250 320" fill="url(#ht)" opacity="0.95"/>
+        <circle cx="115" cy="375" r="3" fill="#C44428" opacity="0.5"/>
+        <circle cx="153" cy="395" r="3" fill="#C44428" opacity="0.5"/>
+        <circle cx="200" cy="410" r="3" fill="#C44428" opacity="0.5"/>
+        <circle cx="247" cy="395" r="3" fill="#C44428" opacity="0.5"/>
+        <circle cx="285" cy="375" r="3" fill="#C44428" opacity="0.5"/>
+        <ellipse cx="200" cy="220" rx="110" ry="120" fill="url(#hb)"/>
+        <ellipse cx="200" cy="220" rx="110" ry="120" fill="url(#hs)"/>
+        <ellipse cx="200" cy="255" rx="65" ry="50" fill="rgba(255,255,255,0.06)"/>
+        <line x1="200" y1="100" x2="200" y2="68" stroke="#C44428" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="200" cy="62" r="7" fill="#00E6D2" filter="url(#hg)"/>
+        <circle cx="200" cy="62" r="4" fill="#7FFFFF"/>
+        <path d="M152 175 Q200 165 248 175" fill="none" stroke="rgba(0,0,0,0.12)" stroke-width="1.5"/>
+        <circle cx="155" cy="180" r="2.5" fill="rgba(0,0,0,0.1)"/>
+        <circle cx="245" cy="180" r="2.5" fill="rgba(0,0,0,0.1)"/>
+        <ellipse cx="168" cy="215" rx="26" ry="28" fill="rgba(0,0,0,0.3)"/>
+        <ellipse cx="168" cy="215" rx="22" ry="24" fill="url(#he)" filter="url(#hg)"/>
+        <ellipse cx="168" cy="215" rx="10" ry="12" fill="#005F56"/>
+        <ellipse cx="160" cy="208" rx="5" ry="6" fill="rgba(255,255,255,0.5)"/>
+        <ellipse cx="232" cy="215" rx="26" ry="28" fill="rgba(0,0,0,0.3)"/>
+        <ellipse cx="232" cy="215" rx="22" ry="24" fill="url(#he)" filter="url(#hg)"/>
+        <ellipse cx="232" cy="215" rx="10" ry="12" fill="#005F56"/>
+        <ellipse cx="224" cy="208" rx="5" ry="6" fill="rgba(255,255,255,0.5)"/>
+        <path d="M185 260 Q200 272 215 260" fill="none" stroke="rgba(0,0,0,0.2)" stroke-width="2.5" stroke-linecap="round"/>
       </svg>
     </div>
     <div class="hero-eyebrow r rd1">Meet Stan</div>
@@ -499,30 +529,12 @@ section { position: relative; z-index: 1; }
     </div>
 
     <div class="skills-grid">
-      <div class="skill-card r rd1">
-        <h3>Market Research</h3>
-        <p>Vendor comparison, pricing analysis, competitor research. Stan pulls live data from the web and delivers structured recommendations. What takes you two hours takes him ten minutes.</p>
-      </div>
-      <div class="skill-card r rd2">
-        <h3>Email & Communications</h3>
-        <p>Draft emails, follow-ups, client responses. Stan writes in your voice, not his. Every email passes through a human before it sends.</p>
-      </div>
-      <div class="skill-card r rd3">
-        <h3>Scheduling & Calendar</h3>
-        <p>Meeting coordination, availability checks, calendar management. Stan reads your calendar and handles the back-and-forth so you don't have to.</p>
-      </div>
-      <div class="skill-card r rd1">
-        <h3>Financial Analysis</h3>
-        <p>Cost-benefit breakdowns, investment frameworks, ROI calculations, exit modeling. Stan found a $63,670 gap in a client's exit calculator that both partners missed.</p>
-      </div>
-      <div class="skill-card r rd2">
-        <h3>Vendor Comparison</h3>
-        <p>Live pricing from real websites, side-by-side feature analysis, staged investment recommendations. Stan saved $267 on a single equipment purchase in his first engagement.</p>
-      </div>
-      <div class="skill-card r rd3">
-        <h3>Document Generation</h3>
-        <p>Reports, proposals, meeting summaries, research briefs. Stan writes them, you review them. Templates improve with every correction.</p>
-      </div>
+      <div class="skill-card r rd1"><h3>Market Research</h3><p>Vendor comparison, pricing analysis, competitor research. Stan pulls live data from the web and delivers structured recommendations. What takes you two hours takes him ten minutes.</p></div>
+      <div class="skill-card r rd2"><h3>Email & Communications</h3><p>Draft emails, follow-ups, client responses. Stan writes in your voice, not his. Every email passes through a human before it sends.</p></div>
+      <div class="skill-card r rd3"><h3>Scheduling & Calendar</h3><p>Meeting coordination, availability checks, calendar management. Stan reads your calendar and handles the back-and-forth so you don't have to.</p></div>
+      <div class="skill-card r rd1"><h3>Financial Analysis</h3><p>Cost-benefit breakdowns, investment frameworks, ROI calculations, exit modeling. Stan found a $63,670 gap in a client's exit calculator that both partners missed.</p></div>
+      <div class="skill-card r rd2"><h3>Vendor Comparison</h3><p>Live pricing from real websites, side-by-side feature analysis, staged investment recommendations. Stan saved $267 on a single equipment purchase in his first engagement.</p></div>
+      <div class="skill-card r rd3"><h3>Document Generation</h3><p>Reports, proposals, meeting summaries, research briefs. Stan writes them, you review them. Templates improve with every correction.</p></div>
     </div>
 
     <div class="stan-quote r" style="margin-top: 40px;">
@@ -542,21 +554,9 @@ section { position: relative; z-index: 1; }
     </div>
 
     <div class="steps">
-      <div class="step r rd1">
-        <div class="step-num">1</div>
-        <h3>Tell Us What You Need</h3>
-        <p>We set up Stan for your business. He inherits 500+ behavioral corrections from prior deployments — so he's smart on day one, not just after months of training.</p>
-      </div>
-      <div class="step r rd2">
-        <div class="step-num">2</div>
-        <h3>Stan Gets to Work</h3>
-        <p>Message Stan directly via Telegram. Ask him to research vendors, draft emails, compare prices, model financials — whatever your business needs, whenever you need it.</p>
-      </div>
-      <div class="step r rd3">
-        <div class="step-num">3</div>
-        <h3>He Gets Smarter</h3>
-        <p>When Stan gets something wrong, you tell him. That correction is permanent — he never makes that mistake again. And every fix improves Stan for every client, not just you.</p>
-      </div>
+      <div class="step r rd1"><div class="step-num">1</div><h3>Tell Us What You Need</h3><p>We set up Stan for your business. He inherits 500+ behavioral corrections from prior deployments — so he's smart on day one, not just after months of training.</p></div>
+      <div class="step r rd2"><div class="step-num">2</div><h3>Stan Gets to Work</h3><p>Message Stan directly via Telegram. Ask him to research vendors, draft emails, compare prices, model financials — whatever your business needs, whenever you need it.</p></div>
+      <div class="step r rd3"><div class="step-num">3</div><h3>He Gets Smarter</h3><p>When Stan gets something wrong, you tell him. That correction is permanent — he never makes that mistake again. And every fix improves Stan for every client, not just you.</p></div>
     </div>
   </div>
 </section>
@@ -571,32 +571,11 @@ section { position: relative; z-index: 1; }
     </div>
 
     <div class="stories-grid">
-      <div class="story-card wide r">
-        <div class="story-label">First engagement</div>
-        <h3>The Locksmith</h3>
-        <p>A locksmith operator facing a $2,500 equipment decision messaged Stan while out shopping. Ten minutes later: local market data, a staged investment framework, live vendor comparison across three websites. <span class="hl">$267 in savings</span> identified.</p>
-        <p>Stan also made four mistakes. The operator caught all four, corrected them on the spot, and those fixes now apply to every future engagement for every client. That's how it works.</p>
-      </div>
-      <div class="story-card r rd1">
-        <div class="story-label">Financial catch</div>
-        <h3>The Business Partner</h3>
-        <p>A new user started issuing requests within twenty minutes — financial modeling, vendor negotiation, tax strategy. Stan found a <span class="hl">$63,670 accounting gap</span> in their exit calculator that neither partner had caught.</p>
-      </div>
-      <div class="story-card r rd2">
-        <div class="story-label">Built a safety framework</div>
-        <h3>The Student</h3>
-        <p>An operator's teenage daughter found Stan on her own and used him for chemistry homework. He caught her errors and guided her without giving away answers. That same day, the experience created Stan's minor-safety framework.</p>
-      </div>
-      <div class="story-card r rd3">
-        <div class="story-label">User retention</div>
-        <h3>The Family Demo</h3>
-        <p>A non-technical user in her 60s spent four hours asking about water filters, garden design, and iPhone problems. When Stan couldn't solve the iPhone issue, he escalated it. She came back unprompted two days later.</p>
-      </div>
-      <div class="story-card r rd4">
-        <div class="story-label">184 messages in 9 days</div>
-        <h3>The Vacation</h3>
-        <p>One user sent 184 messages over nine days across 14 task types. When a security update locked her out, she troubleshot her own access to get back in. Nobody asked her to.</p>
-      </div>
+      <div class="story-card wide r"><div class="story-label">First engagement</div><h3>The Locksmith</h3><p>A locksmith operator facing a $2,500 equipment decision messaged Stan while out shopping. Ten minutes later: local market data, a staged investment framework, live vendor comparison across three websites. <span class="hl">$267 in savings</span> identified.</p><p>Stan also made four mistakes. The operator caught all four, corrected them on the spot, and those fixes now apply to every future engagement for every client. That's how it works.</p></div>
+      <div class="story-card r rd1"><div class="story-label">Financial catch</div><h3>The Business Partner</h3><p>A new user started issuing requests within twenty minutes — financial modeling, vendor negotiation, tax strategy. Stan found a <span class="hl">$63,670 accounting gap</span> in their exit calculator that neither partner had caught.</p></div>
+      <div class="story-card r rd2"><div class="story-label">Built a safety framework</div><h3>The Student</h3><p>An operator's teenage daughter found Stan on her own and used him for chemistry homework. He caught her errors and guided her without giving away answers. That same day, the experience created Stan's minor-safety framework.</p></div>
+      <div class="story-card r rd3"><div class="story-label">User retention</div><h3>The Family Demo</h3><p>A non-technical user in her 60s spent four hours asking about water filters, garden design, and iPhone problems. When Stan couldn't solve the iPhone issue, he escalated it. She came back unprompted two days later.</p></div>
+      <div class="story-card r rd4"><div class="story-label">184 messages in 9 days</div><h3>The Vacation</h3><p>One user sent 184 messages over nine days across 14 task types. When a security update locked her out, she troubleshot her own access to get back in. Nobody asked her to.</p></div>
     </div>
   </div>
 </section>
@@ -611,53 +590,12 @@ section { position: relative; z-index: 1; }
     </div>
 
     <div class="pricing-grid">
-      <div class="price-card r rd1">
-        <div class="price-tier">Starter</div>
-        <div class="price-val">$299</div>
-        <div class="price-per">per month</div>
-        <div class="price-desc">Stan handles research, email drafts, scheduling, and general operations for your business. Self-serve access with email support.</div>
-        <ul class="price-list">
-          <li>One AI agent, always on</li>
-          <li>Core skills (research, email, calendar)</li>
-          <li>Human-reviewed corrections</li>
-          <li>Email support</li>
-          <li>Monthly report</li>
-        </ul>
-      </div>
-
-      <div class="price-card pop r rd2">
-        <div class="price-badge">Most Popular</div>
-        <div class="price-tier">Professional</div>
-        <div class="price-val">$799</div>
-        <div class="price-per">per month + setup</div>
-        <div class="price-desc">Custom-configured Stan with dedicated onboarding. Full skill suite: vendor comparison, financial analysis, consumer research, document generation.</div>
-        <ul class="price-list">
-          <li>Custom configuration for your business</li>
-          <li>Full skill suite (25 skills)</li>
-          <li>Dedicated setup and onboarding</li>
-          <li>Weekly check-in calls</li>
-          <li>Priority correction queue</li>
-        </ul>
-      </div>
-
-      <div class="price-card r rd3">
-        <div class="price-tier">Managed Ops</div>
-        <div class="price-val">$2,000+</div>
-        <div class="price-per">per month, custom scope</div>
-        <div class="price-desc">Fully managed AI operations. Multiple agents, team training, SLA, custom integrations. For businesses making AI the backbone of their operations.</div>
-        <ul class="price-list">
-          <li>Multiple agents, custom workflows</li>
-          <li>Team onboarding and training</li>
-          <li>SLA with guaranteed response times</li>
-          <li>Custom integrations</li>
-          <li>Dedicated account management</li>
-        </ul>
-      </div>
+      <div class="price-card r rd1"><div class="price-tier">Starter</div><div class="price-val">$299</div><div class="price-per">per month</div><div class="price-desc">Stan handles research, email drafts, scheduling, and general operations for your business. Self-serve access with email support.</div><ul class="price-list"><li>One AI agent, always on</li><li>Core skills (research, email, calendar)</li><li>Human-reviewed corrections</li><li>Email support</li><li>Monthly report</li></ul></div>
+      <div class="price-card pop r rd2"><div class="price-badge">Most Popular</div><div class="price-tier">Professional</div><div class="price-val">$799</div><div class="price-per">per month + setup</div><div class="price-desc">Custom-configured Stan with dedicated onboarding. Full skill suite: vendor comparison, financial analysis, consumer research, document generation.</div><ul class="price-list"><li>Custom configuration for your business</li><li>Full skill suite (25 skills)</li><li>Dedicated setup and onboarding</li><li>Weekly check-in calls</li><li>Priority correction queue</li></ul></div>
+      <div class="price-card r rd3"><div class="price-tier">Managed Ops</div><div class="price-val">$2,000+</div><div class="price-per">per month, custom scope</div><div class="price-desc">Fully managed AI operations. Multiple agents, team training, SLA, custom integrations. For businesses making AI the backbone of their operations.</div><ul class="price-list"><li>Multiple agents, custom workflows</li><li>Team onboarding and training</li><li>SLA with guaranteed response times</li><li>Custom integrations</li><li>Dedicated account management</li></ul></div>
     </div>
 
-    <div class="pricing-note r">
-      Every plan includes human oversight on all external actions. Every correction makes Stan smarter for everyone. Fixed pricing means no surprises.
-    </div>
+    <div class="pricing-note r">Every plan includes human oversight on all external actions. Every correction makes Stan smarter for everyone. Fixed pricing means no surprises.</div>
   </div>
 </section>
 
@@ -671,35 +609,15 @@ section { position: relative; z-index: 1; }
     </div>
 
     <div class="trust-row">
-      <div class="trust-pill r rd1">
-        <svg class="check" viewBox="0 0 20 20" fill="none"><path d="M16.7 5L7.5 14.2 3.3 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <p>Every external action reviewed by a human before delivery</p>
-      </div>
-      <div class="trust-pill r rd2">
-        <svg class="check" viewBox="0 0 20 20" fill="none"><path d="M16.7 5L7.5 14.2 3.3 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <p>Corrections are permanent and inherited by all future deployments</p>
-      </div>
-      <div class="trust-pill r rd3">
-        <svg class="check" viewBox="0 0 20 20" fill="none"><path d="M16.7 5L7.5 14.2 3.3 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <p>Isolated infrastructure — Stan runs in his own secure virtual machine</p>
-      </div>
-      <div class="trust-pill r rd4">
-        <svg class="check" viewBox="0 0 20 20" fill="none"><path d="M16.7 5L7.5 14.2 3.3 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <p>Full audit trail — see everything Stan does, anytime</p>
-      </div>
-      <div class="trust-pill r rd1">
-        <svg class="check" viewBox="0 0 20 20" fill="none"><path d="M16.7 5L7.5 14.2 3.3 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <p>Minor-safety framework built from a real incident, not theory</p>
-      </div>
-      <div class="trust-pill r rd2">
-        <svg class="check" viewBox="0 0 20 20" fill="none"><path d="M16.7 5L7.5 14.2 3.3 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <p>Credentials encrypted, never displayed — zero-tolerance policy</p>
-      </div>
+      <div class="trust-pill r rd1"><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M16.7 5L7.5 14.2 3.3 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><p>Every external action reviewed by a human before delivery</p></div>
+      <div class="trust-pill r rd2"><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M16.7 5L7.5 14.2 3.3 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><p>Corrections are permanent and inherited by all future deployments</p></div>
+      <div class="trust-pill r rd3"><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M16.7 5L7.5 14.2 3.3 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><p>Isolated infrastructure — Stan runs in his own secure virtual machine</p></div>
+      <div class="trust-pill r rd4"><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M16.7 5L7.5 14.2 3.3 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><p>Full audit trail — see everything Stan does, anytime</p></div>
+      <div class="trust-pill r rd1"><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M16.7 5L7.5 14.2 3.3 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><p>Minor-safety framework built from a real incident, not theory</p></div>
+      <div class="trust-pill r rd2"><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M16.7 5L7.5 14.2 3.3 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><p>Credentials encrypted, never displayed — zero-tolerance policy</p></div>
     </div>
 
-    <div class="trust-note r">
-      StanleyBot is built on <a href="https://fleetbrain.ai" target="_blank">FleetBrain</a>'s managed AI operations platform. Compliance-ready architecture for SOC 2, HIPAA, and NERC CIP.
-    </div>
+    <div class="trust-note r">StanleyBot is built on <a href="https://fleetbrain.ai" target="_blank">FleetBrain</a>'s managed AI operations platform. Compliance-ready architecture for SOC 2, HIPAA, and NERC CIP.</div>
   </div>
 </section>
 
@@ -717,15 +635,24 @@ section { position: relative; z-index: 1; }
   <div class="w">
     <div class="footer-inner">
       <div class="footer-logo">
-        <svg viewBox="0 0 512 512" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 200 220" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <radialGradient id="bg3" cx="50%" cy="35%" r="55%"><stop offset="0%" stop-color="#FF7A5C"/><stop offset="50%" stop-color="#E8604A"/><stop offset="100%" stop-color="#C44835"/></radialGradient>
+            <radialGradient id="fb" cx="50%" cy="40%" r="50%"><stop offset="0%" stop-color="#EF7B5B"/><stop offset="70%" stop-color="#E45A3B"/><stop offset="100%" stop-color="#C44428"/></radialGradient>
           </defs>
-          <ellipse cx="256" cy="268" rx="142" ry="150" fill="url(#bg3)"/>
-          <ellipse cx="206" cy="285" rx="42" ry="45" fill="#0A0A12"/><ellipse cx="306" cy="285" rx="42" ry="45" fill="#0A0A12"/>
-          <circle cx="206" cy="290" r="17" fill="#00FFFF"/><circle cx="306" cy="290" r="17" fill="#00FFFF"/>
-          <circle cx="206" cy="290" r="10" fill="#66FFFF"/><circle cx="306" cy="290" r="10" fill="#66FFFF"/>
-          <path d="M234,338 Q256,355 278,338" stroke="#A83828" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M60 155 Q45 175 38 190 Q33 198 42 195 Q50 192 53 180 Q55 170 58 158" fill="#D04A2E"/>
+          <path d="M78 158 Q72 178 68 192 Q65 200 74 196 Q80 192 79 180 Q78 170 79 160" fill="#D04A2E" opacity="0.9"/>
+          <path d="M100 160 Q100 180 99 195 Q98 204 103 204 Q108 203 107 193 Q106 178 102 160" fill="#D04A2E"/>
+          <path d="M122 158 Q128 178 132 192 Q135 200 126 196 Q120 192 121 180 Q122 170 121 160" fill="#D04A2E" opacity="0.9"/>
+          <path d="M140 155 Q155 175 162 190 Q167 198 158 195 Q150 192 147 180 Q145 170 142 158" fill="#D04A2E"/>
+          <ellipse cx="100" cy="100" rx="58" ry="64" fill="url(#fb)"/>
+          <line x1="100" y1="36" x2="100" y2="22" stroke="#C44428" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="100" cy="19" r="4.5" fill="#00E6D2"/>
+          <circle cx="100" cy="19" r="2.5" fill="#7FFFFF"/>
+          <ellipse cx="82" cy="98" rx="11" ry="12" fill="#00E6D2"/>
+          <ellipse cx="82" cy="98" rx="5" ry="6" fill="#005F56"/>
+          <ellipse cx="118" cy="98" rx="11" ry="12" fill="#00E6D2"/>
+          <ellipse cx="118" cy="98" rx="5" ry="6" fill="#005F56"/>
+          <path d="M90 122 Q100 130 110 122" fill="none" stroke="rgba(0,0,0,0.18)" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
         <span class="wm"><span class="s">Stanley</span><span class="b">Bot</span></span>
       </div>
